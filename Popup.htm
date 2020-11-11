@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Popup</title>
+</head>
+
+<body>
+<!-- this script got from www.javascriptfreecode.com coded by: Kerixa Inc. -->
+<HTML>
+<HEAD>
+<!--START OF PopUp on Button Click-->
+
+<SCRIPT LANGUAGE="JavaScript">
+function AlertCC(label, msg)
+{
+  var cc1 = 
+    "<TITLE>Window Title</TITLE>" +
+    "<BODY BGCOLOR='FFFFFF'><TABLE BORDER=0><TR>" +
+        "<TD WIDTH=90% HEIGHT=90 VALIGN=TOP ALIGN=LEFT>"+
+        "<FONT SIZE=4 FACE=ARIAL>"
+  
+  var cc2 = "<FONT COLOR='FF0000'><B>"+label+"</B></FONT><BR><P>"
+
+  var cc3 =   
+    "</TD><TD WIDTH=10%> </TD></TR><TR><TD> </TD>"+
+    "<TD VALIGN=BOTTOM ALIGN=RIGHT>"+
+    "<FORM><INPUT TYPE='BUTTON' VALUE='Close Window'" +
+                   "onClick='self.close()'>"  +
+    "</FORM></TD></TR></TABLE></BODY>"
+
+ 
+  popup = window.open("","popDialog","height=280,width=400,scrollbars=no")
+  popup.document.write(cc1+cc2+msg+cc3)
+  popup.document.close()
+}
+
+function ccalert1()
+{
+  AlertCC('Alert One', 'This script will let you place information about your product or topic of choice.')
+}
+function ccalert2()
+{
+  AlertCC('Alert Two', 'This script will let you place information about your product or topic of choice.')
+}
+function ccalert3()
+{
+  AlertCC('Alert Three', 'This script will let you place information about your product or topic of choice.')
+}
+function ccalert4()
+{
+  AlertCC('Alert Four', 'This script will let you place information about your product or topic of choice.')
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<CENTER><FORM><INPUT TYPE="BUTTON" VALUE="[ Alert One ]" onClick="ccalert1()"></FORM></CENTER><p>
+<CENTER><FORM><INPUT TYPE="BUTTON" VALUE="[ Alert Two ]" onClick="ccalert2()"></FORM></CENTER><p>
+<CENTER><FORM><INPUT TYPE="BUTTON" VALUE="[ Alert Three ]" onClick="ccalert3()"></FORM></CENTER><p>
+<CENTER><FORM><INPUT TYPE="BUTTON" VALUE="[ Alert Four ]" onClick="ccalert4()"></FORM></CENTER><p>
+<!-- END OF SCRIPT -->
+</body>
+</html>
